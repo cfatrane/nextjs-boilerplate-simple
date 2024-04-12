@@ -7,6 +7,7 @@ module.exports = {
     "next/core-web-vitals",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
+    "plugin:tailwindcss/recommended",
     "prettier",
   ],
   overrides: [
