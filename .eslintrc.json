@@ -1,9 +1,12 @@
 {
   "extends": [
     "next/core-web-vitals",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
     "plugin:tailwindcss/recommended",
-    "prettier"
+    "plugin:prettier/recommended"
   ],
+  "ignorePatterns": ["**/components/ui/**"],
   "rules": {
     // C
     "camelcase": "warn",
@@ -12,87 +15,6 @@
     "default-param-last": ["error"],
     // E
     "eqeqeq": "error",
-    // I
-    "import/order": [
-      "error",
-      {
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "object",
-          "type",
-          "index",
-          "unknown"
-        ],
-        "newlines-between": "always",
-        "pathGroups": [
-          {
-            "pattern": "react",
-            "group": "builtin",
-            "position": "before"
-          },
-          {
-            "pattern": "next",
-            "group": "builtin",
-            "position": "before"
-          },
-          {
-            "pattern": "@/api/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/assets/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/components/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/constants/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/helpers/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/hooks/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/styles/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/types/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/utils/**",
-            "group": "internal",
-            "position": "before"
-          }
-        ],
-        "distinctGroup": true,
-        "pathGroupsExcludedImportTypes": ["react"],
-        "alphabetize": {
-          "order": "asc" /* Sort in ascending order. Options: ['ignore', 'asc', 'desc'] */,
-          "caseInsensitive": true /* Ignore case. Options: [true, false] */
-        }
-      }
-    ],
     // M
     "max-params": ["warn", 3],
     // N
@@ -125,11 +47,16 @@
     // S
     "sort-keys": ["off", "asc", { "natural": true, "minKeys": 5 }],
     "sort-vars": "error",
-    "sort-imports": ["off"],
 
     "react/boolean-prop-naming": ["warn"],
     "react/jsx-newline": ["warn"],
     "react/jsx-no-useless-fragment": ["error", { "allowExpressions": true }],
     "react/jsx-sort-props": ["warn", { "ignoreCase": true }]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": true,
+      "node": true
+    }
   }
 }

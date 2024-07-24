@@ -1,4 +1,4 @@
-# Boilerplate Next Js (Simple) 14 + Eslint + Prettier + Tailwind WIP
+# Boilerplate Next Js (Simple) 14 + Eslint + Prettier + Tailwind
 
 ## Features 🛠️
 
