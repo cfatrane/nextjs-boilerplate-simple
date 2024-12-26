@@ -25,8 +25,5 @@
   "files.associations": { "*.css": "tailwindcss" },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-
-  // i18n
-  "i18n-ally.localesPaths": ["messages"]
+  "files.trimTrailingWhitespace": true
 }

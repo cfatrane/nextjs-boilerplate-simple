@@ -30,7 +30,14 @@
 - [Joi](https://joi.dev/)
 - [Yup](https://github.com/jquense/yup)
 - [Zod](https://zod.dev/)
--
+
+### Internationalization
+
+> [Next Js Documentation](https://nextjs.org/docs/pages/building-your-application/routing/internationalization)
+
+- [next-int](https://next-intl.dev/)
+- [react-intl](https://formatjs.github.io/)
+- [react-i18next](https://react.i18next.com/)
 
 ## Getting Started 🤔
 
